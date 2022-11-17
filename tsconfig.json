@@ -1,5 +1,14 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@portfolio/*": ["src/ui/*", "app/*"],
+            "@portfolio/api*": ["pages/api/v1*"],
+            "@portfolio/hooks/*": ["src/hooks/*"],
+            "@portfolio/lib/*": ["src/lib/*"],
+            "@portfolio/providers/*": ["src/providers/*"],
+            "@portfolio/utils/*": ["src/utils/*"]
+        },
         "target": "ES2016",
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
