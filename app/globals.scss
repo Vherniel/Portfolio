@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-    font-family: var(--manrope);
-}
-
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
