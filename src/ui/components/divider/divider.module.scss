@@ -1,0 +1,16 @@
+.divider {
+    display: flex;
+    position: relative;
+    align-items: center;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    .content {
+        z-index: 1;
+    }
+}

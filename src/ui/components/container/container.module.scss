@@ -1,0 +1,92 @@
+/// Mobile-first container
+/// Note:   Use em for media queries.
+///         Breakpoints are more consistent with em units especially
+///         when users are zooming in or resizing browser window.
+
+// breakpoint:      (none)
+// target size:     20rem below (320px)
+// target device:   Galaxy Fold
+.container {
+    margin: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    overflow: hidden;
+}
+
+// breakpoint:      xxs
+// target size:     20em above (320px)
+// target device:   iPhone 4, iPhone 5
+@media screen and (min-width: 20em) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+// breakpoint:      xs
+// target size:     30em above (480px)
+// target device:   Common phone screen sizes
+@media screen and (min-width: 30em) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+// breakpoint:      sm
+// target size:     40em above (640px)
+// target device:   Medium-large phone screen sizes
+@media screen and (min-width: 40em) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+// breakpoint:      md
+// target size:     48em above (768px)
+// target device:   Lowest tablet screen size
+@media screen and (min-width: 48em) {
+    .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+// breakpoint:      lg
+// target size:     64em above (1024px)
+// target device:   Large tablet screen size
+@media screen and (min-width: 64em) {
+    // contain only to max-width 60em (940px)?
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+// breakpoint:      xl
+// target size:     80em above (1280px)
+// target device:   Laptop screen size
+@media screen and (min-width: 80em) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+// breakpoint:      xxl
+// target size:     96em above (1536px)
+// target device:   Large desktop screen size
+@media screen and (min-width: 96em) {
+    .container {
+        max-width: 96em;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+@media print {
+}
