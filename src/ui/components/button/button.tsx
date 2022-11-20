@@ -33,7 +33,9 @@ export const Button = forwardRef<ButtonRefHandle, ButtonProps>((props, ref) => {
             ref={elementRef}
             className={clsx(
                 styles.button,
-                "text-xs font-bold min-w-[6em] px-4 py-2 rounded-sm shadow-md border",
+                "text-xs font-bold min-w-[6em] px-4 py-2 rounded-sm shadow-sm border",
+                "sm:text-sm",
+                "md:text-base md:px-6",
                 outline
                     ? clsx(
                           "border-neutral-300 text-neutral-600 bg-none",
@@ -54,3 +56,5 @@ export const Button = forwardRef<ButtonRefHandle, ButtonProps>((props, ref) => {
         </button>
     );
 });
+
+Button.displayName = "Button";

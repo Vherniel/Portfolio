@@ -33,10 +33,11 @@ export const Divider = forwardRef<DividerRefHandle, DividerProps>((props, ref) =
             className={clsx(
                 styles.divider,
                 "relative my-2",
-                "before:border-neutral-200 before:border-t before:border-b",
-                "dark:before:border-neutral-700"
+                "before:border-neutral-500 before:border-t before:border-b"
             )}>
             <div className={clsx(styles.content)}>{children}</div>
         </div>
     );
 });
+
+Divider.displayName = "Divider";
