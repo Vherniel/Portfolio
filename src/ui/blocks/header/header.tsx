@@ -13,20 +13,46 @@ interface HeaderProps extends React.ComponentPropsWithoutRef<"header"> {
 
 const socialLinks = [
     {
-        icon: <FaLinkedinIn className={clsx("text-neutral-800 text-base", "md:text-xl")} />,
-        href: "https://www.linkedin.com/in/vherniel-lebis/",
-    },
-    {
-        icon: <FaGithub className={clsx("text-neutral-800 text-base", "md:text-xl")} />,
-        href: "https://www.linkedin.com/in/vherniel-lebis/",
-    },
-    {
-        icon: <RiGitlabFill className={clsx("text-neutral-800 text-base", "md:text-xl")} />,
+        icon: (
+            <FaLinkedinIn
+                className={clsx(
+                    "text-neutral-800 dark:text-neutral-100 text-base",
+                    "md:text-xl"
+                )}
+            />
+        ),
         href: "https://www.linkedin.com/in/vherniel-lebis/",
     },
     {
         icon: (
-            <AiFillBehanceSquare className={clsx("text-neutral-800 text-base", "md:text-xl")} />
+            <FaGithub
+                className={clsx(
+                    "text-neutral-800 dark:text-neutral-100 text-base",
+                    "md:text-xl"
+                )}
+            />
+        ),
+        href: "https://www.linkedin.com/in/vherniel-lebis/",
+    },
+    {
+        icon: (
+            <RiGitlabFill
+                className={clsx(
+                    "text-neutral-800 dark:text-neutral-100 text-base",
+                    "md:text-xl"
+                )}
+            />
+        ),
+        href: "https://www.linkedin.com/in/vherniel-lebis/",
+    },
+    {
+        icon: (
+            <AiFillBehanceSquare
+                className={clsx(
+                    "text-neutral-800 dark:text-neutral-100 text-base",
+                    "md:text-xl"
+                )}
+            />
         ),
         href: "https://www.behance.net/vherniellebis/",
     },
@@ -42,16 +68,22 @@ export const Header = ({ className, ...restProps }: HeaderProps) => {
             {...restProps}>
             <div className={clsx("flex items-center p-4", "md:p-12")}>
                 <div className={clsx("mr-auto")}>
-                    <Link href="/">
+                    <a href="/">
                         <Logo
                             scale={1.5}
                             className={clsx("fill-neutral-800 dark:fill-neutral-300")}
                         />
-                    </Link>
+                    </a>
                 </div>
                 <div className={clsx("flex items-center")}>
                     <div className={clsx("md:mr-4")}>
-                        <Button label="Contact" outline />
+                        <a
+                            href="mailto:hello@vherniellebis.tech"
+                            className={clsx(
+                                "font-bold hover:border-b-2 border-neutral-800 dark:border-neutral-100"
+                            )}>
+                            Contact
+                        </a>
                     </div>
                     <div className={clsx("flex items-center")}>
                         {socialLinks.map(({ icon, href }, index) => (

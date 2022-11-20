@@ -6,12 +6,14 @@ interface WorkProps {
     image: string;
     href: string;
     title: string;
+    target?: string;
 }
 
-export const Work = ({ image, href, title }: WorkProps) => {
+export const Work = ({ image, href, target, title }: WorkProps) => {
     return (
         <Link
             href={href}
+            target={target}
             style={{
                 backgroundImage: `url("${image}")`,
             }}

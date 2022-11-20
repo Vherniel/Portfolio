@@ -9,7 +9,7 @@ export const About = () => {
         <section className={clsx()}>
             <Container className={clsx("flex py-12", "lg:py-32")}>
                 <div className={clsx("xs:basis-3/12", "lg:basis-2/12")}>
-                    <span className={clsx("font-bold mr-1", "lg:text-5xl")}>01</span>
+                    <span className={clsx("font-bold mr-1", "lg:text-5xl")}>02</span>
                     <span className={clsx("mr-1", "lg:text-5xl")}>—</span>
                 </div>
                 <div className={clsx("flex-1", "xs:basis-9/12", "lg:basis-10/12")}>

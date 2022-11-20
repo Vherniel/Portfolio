@@ -26,6 +26,8 @@ export const Footer = (props: FooterProps) => {
                         </p>
                         <Link
                             href="https://github.com/Vherniel/portfolio"
+                            target="_blank"
+                            rel="noopener"
                             className={clsx(
                                 "font-bold inline-block bg-neutral-100 text-neutral-800 mt-6 px-8 py-4",
                                 "dark:text-neutral-100 dark:bg-neutral-800"

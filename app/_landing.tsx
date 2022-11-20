@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@portfolio/components/button";
+import { ButtonLink } from "@portfolio/components/button-link";
 import { Container } from "@portfolio/components/container";
 import {
     SiTypescript,
@@ -19,25 +20,49 @@ import clsx from "clsx";
 
 const technologies = [
     {
-        icon: <SiTypescript className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiTypescript
+                className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")}
+            />
+        ),
     },
     {
-        icon: <SiJavascript className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiJavascript
+                className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")}
+            />
+        ),
     },
     {
-        icon: <IoLogoNodejs className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <IoLogoNodejs
+                className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")}
+            />
+        ),
     },
     {
-        icon: <SiReact className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiReact className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")} />
+        ),
     },
     {
-        icon: <SiNextdotjs className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiNextdotjs
+                className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")}
+            />
+        ),
     },
     {
-        icon: <SiTailwindcss className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiTailwindcss
+                className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")}
+            />
+        ),
     },
     {
-        icon: <SiLinux className={clsx("text-neutral-800", "sm:text-xl")} />,
+        icon: (
+            <SiLinux className={clsx("text-neutral-800 dark:text-neutral-100", "sm:text-xl")} />
+        ),
     },
 ];
 
@@ -103,15 +128,22 @@ export const Landing = () => {
                     </div>
                     <div className={clsx("flex items-center")}>
                         <div className={clsx("mr-4")}>
-                            <Button label="Send an email" className={clsx("text-base my-6")} />
+                            <ButtonLink
+                                href="mailto:hello@vherniellebis.tech"
+                                label="Send an email"
+                                className={clsx("text-base my-6")}
+                            />
                         </div>
                         <div>
-                            <Link href="/CV.pdf" className={clsx("flex items-center")}>
+                            <a
+                                href="/CV.pdf"
+                                target="_blank"
+                                className={clsx("flex items-center")}>
                                 <div className={clsx("mr-2")}>
                                     <AiOutlineFilePdf size="1.5em" />
                                 </div>
                                 <span>Resume/CV</span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +197,11 @@ export const Landing = () => {
                         </div>
                         <div>
                             <p className={clsx("font-bold")}>Email address</p>
-                            <p>hello@vherniellebis.tech</p>
+                            <p>
+                                <a href="mailto:hello@vherniellebis.tech">
+                                    hello@vherniellebis.tech
+                                </a>
+                            </p>
                         </div>
                     </div>
                     <div className={clsx("mb-8")}>
@@ -174,7 +210,9 @@ export const Landing = () => {
                         </div>
                         <div>
                             <p className={clsx("font-bold")}>Contact</p>
-                            <p>+63 966 990-9400</p>
+                            <p>
+                                <a href="tel:+639669909400">+63 966 990-9400</a>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -84,6 +84,7 @@ export const Works = () => {
             <section className={clsx(styles.work, "px-4", "md:px-12 md:py-32")}>
                 <div className={clsx("md:flex")}>
                     <div className={clsx("md:basis-3/12")}>
+                        <span className={clsx("font-bold mr-1", "lg:text-5xl")}>01</span>
                         <h2 className={clsx("font-bold lg:text-9xl")}>Work</h2>
                         <p className={clsx("mt-4", "lg:ml-4 lg:text-xl")}>
                             Previous projects that I've worked with.
@@ -105,7 +106,12 @@ export const Works = () => {
                             image="/craveventures.png"
                             title="Crave Ventures"
                         />
-                        {/* <Work image="/fcc.png" title="freeCodeCamp.org" /> */}
+                        <Work
+                            href="https://www.freecodecamp.org/certification/vherniel/responsive-web-design"
+                            target="_blank"
+                            image="/freecodecamp.png"
+                            title="freeCodeCamp.org"
+                        />
                     </div>
                 </div>
             </section>
