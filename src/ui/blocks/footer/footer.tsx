@@ -25,7 +25,7 @@ export const Footer = (props: FooterProps) => {
                             View the repository of this website on GitHub
                         </p>
                         <Link
-                            href="/"
+                            href="https://github.com/Vherniel/portfolio"
                             className={clsx(
                                 "font-bold inline-block bg-neutral-100 text-neutral-800 mt-6 px-8 py-4",
                                 "dark:text-neutral-100 dark:bg-neutral-800"
