@@ -37,7 +37,7 @@ export const Header = ({ className, ...restProps }: HeaderProps) => {
         <header
             className={clsx(
                 className,
-                "fixed left-0 w-full top-0 z-10 bg-white dark:bg-neutral-800"
+                "fixed left-0 w-full top-0 z-10 bg-neutral-100 dark:bg-neutral-800"
             )}
             {...restProps}>
             <div className={clsx("flex items-center p-4", "md:p-12")}>
